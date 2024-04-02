@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './Layout/footer.component';
 import { HeaderComponent } from './Layout/header.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -10,11 +11,12 @@ import { HeaderComponent } from './Layout/header.component';
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ]
 })
 export class CoreModule { }
